@@ -126,14 +126,34 @@ footer {
 
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav ul li {
-        margin: 8px 0;
+        margin: 5px;
     }
 
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    table {
+        font-size: 12px;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
     nav ul li a {
         font-size: 16px;
         padding: 10px 15px;
@@ -142,30 +162,14 @@ footer {
     table {
         font-size: 14px;
     }
-
-    th,
-    td {
-        padding: 6px;
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul li a {
-        font-size: 17px;
-        padding: 10px 18px;
-    }
-
-    table {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 1024px) {
     nav ul li a {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     table {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
